@@ -1,0 +1,86 @@
+\hypertarget{util_8c}{}\doxysection{util.\+c File Reference}
+\label{util_8c}\index{util.c@{util.c}}
+
+
+C datoteka.  
+
+
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{util_8c_a670ea7984b4ed17ee7ba54e38ad94b08}{izmjeni}} (int $\ast$xp, int $\ast$yp)
+\item 
+void \mbox{\hyperlink{util_8c_a68f8793f1ed38efbd8ffa02602f688e7}{Sort}} (int16\+\_\+t $\ast$array, int16\+\_\+t array\+\_\+length, int8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Potrebne biblioteke. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{util_8c_a54794a20cfadf0a26a3134f3d61c6357}{Check}} (int16\+\_\+t $\ast$array)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C datoteka. 
+
+\begin{DoxyAuthor}{Author}
+Miljan Eric 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16/05/2021 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{util_8c_a54794a20cfadf0a26a3134f3d61c6357}\label{util_8c_a54794a20cfadf0a26a3134f3d61c6357}} 
+\index{util.c@{util.c}!Check@{Check}}
+\index{Check@{Check}!util.c@{util.c}}
+\doxysubsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily int8\+\_\+t Check (\begin{DoxyParamCaption}\item[{int16\+\_\+t $\ast$}]{array }\end{DoxyParamCaption})}
+
+Funkcija Check vrsi proveru da li je uneti niz aritmeticki 
+\begin{DoxyParams}{Parameters}
+{\em array} & je niz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrednosti T\+R\+UE ili F\+A\+L\+SE, definisane kao makro konstante za vrednosti 1 i 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{util_8c_a670ea7984b4ed17ee7ba54e38ad94b08}\label{util_8c_a670ea7984b4ed17ee7ba54e38ad94b08}} 
+\index{util.c@{util.c}!izmjeni@{izmjeni}}
+\index{izmjeni@{izmjeni}!util.c@{util.c}}
+\doxysubsubsection{\texorpdfstring{izmjeni()}{izmjeni()}}
+{\footnotesize\ttfamily void izmjeni (\begin{DoxyParamCaption}\item[{int $\ast$}]{xp,  }\item[{int $\ast$}]{yp }\end{DoxyParamCaption})}
+
+Funkcija izmjeni da menja mesta u sortu 
+\begin{DoxyParams}{Parameters}
+{\em xp-\/} & prvi clan \\
+\hline
+{\em yp-\/} & drugi clan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nema povratnu vrednost. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{util_8c_a68f8793f1ed38efbd8ffa02602f688e7}\label{util_8c_a68f8793f1ed38efbd8ffa02602f688e7}} 
+\index{util.c@{util.c}!Sort@{Sort}}
+\index{Sort@{Sort}!util.c@{util.c}}
+\doxysubsubsection{\texorpdfstring{Sort()}{Sort()}}
+{\footnotesize\ttfamily void Sort (\begin{DoxyParamCaption}\item[{int16\+\_\+t $\ast$}]{array,  }\item[{int16\+\_\+t}]{array\+\_\+length,  }\item[{int8\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Potrebne biblioteke. 
+
+Funkcija Sort treba da sortira niz array duzine array\+\_\+length, na nacin odabran parametrom mode. Parametar mode moze imati vrednost konstanti UP i D\+O\+WN definisanih pomocu makroa. Ukoliko mode ima vrednost UP, sortira niz od najvecseg do najmanjeg elementa, dok u slucaju vrednosti D\+O\+WN sortira niz od najmanjeg do najveceg elementa. 
+\begin{DoxyParams}{Parameters}
+{\em array} & niz \\
+\hline
+{\em array} & length duzina niza \\
+\hline
+{\em mode} & mod, nacin rada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nema povratne vrijednost 
+\end{DoxyReturn}
